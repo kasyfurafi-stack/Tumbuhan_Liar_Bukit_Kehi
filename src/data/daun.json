@@ -1,0 +1,425 @@
+[
+  {
+    "id": 1,
+    "nama_lokal": "Sage Liar / Salvia Liar",
+    "nama_ilmiah": "Salvia misella",
+    "kategori": "Herba",
+    "gambar": "/images/Sage_liar.jpeg",
+    "galeri": [
+      "/images/Sage_liar.jpeg"
+    ],
+    "klasifikasi": {
+      "kingdom": "Plantae",
+      "divisi": "Magnoliophyta",
+      "kelas": "Magnoliopsida",
+      "ordo": "Lamiales",
+      "famili": "Lamiaceae"
+    },
+    "ciri_ciri": [
+      "Daun berhadapan (opposite), bentuk bulat telur lonjong, tepi bergerigi halus.",
+      "Permukaan helaian daun dan batang berbulu.",
+      "Bunga berpasangan berwarna biru-ungu dengan garis putih pada bagian dalam mahkota."
+    ],
+    "habitat": "Tanah terbuka, area berumput dan serasah kering lereng Bukit Kehi dengan cahaya cukup.",
+    "deskripsi_singkat": "Banyak ditemukan di area padang rumput lereng Bukit Kehi dengan paparan sinar matahari penuh.",
+    "manfaat": "Kaya minyak atsiri aromatik, berkhasiat sebagai antibakteri dan antioksidan alami.",
+    "lokasi": "Kawasan ekosistem Bukit Kehi, Pamekasan",
+    "tanggal_dokumentasi": "19/09/2026",
+    "sumber_web": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:456714-1/general-information"
+  },
+  {
+    "id": 2,
+    "nama_lokal": "Penutup Tanah",
+    "nama_ilmiah": "Desmodium adscendens",
+    "kategori": "Penutup Tanah",
+    "gambar": "/images/Penutup_tanah.jpeg",
+    "galeri": [
+      "/images/Penutup_tanah.jpeg"
+    ],
+    "klasifikasi": {
+      "kingdom": "Plantae",
+      "divisi": "Magnoliophyta",
+      "kelas": "Magnoliopsida",
+      "ordo": "Fabales",
+      "famili": "Fabaceae"
+    },
+    "ciri_ciri": [
+      "Daun majemuk trifoliat, anak daun kecil berbentuk bulat telur lonjong.",
+      "Batang menjalar/prostrat, bercabang rapat dan dapat membentuk akar pada ruas buku.",
+      "Bunga berukuran kecil berwarna merah muda pucat."
+    ],
+    "habitat": "Padang rumput, tanah terbuka, lereng bukit dan area yang mendapat cahaya cukup.",
+    "deskripsi_singkat": "Tumbuh merayap membentuk hamparan penutup tanah pelindung lereng dari erosi air hujan.",
+    "manfaat": "Pencegah erosi lereng, pengikat nitrogen tanah, serta pereda nyeri otot dan pegal linu.",
+    "lokasi": "Kawasan ekosistem Bukit Kehi, Pamekasan",
+    "tanggal_dokumentasi": "19/09/2026",
+    "sumber_web": "https://identify.plantnet.org/en-au/malaysia/species/Grona%20triflora%20%28L.%29%20H.Ohashi%20%26%20K.Ohashi/data"
+  },
+  {
+    "id": 3,
+    "nama_lokal": "Mimba / Intaran",
+    "nama_ilmiah": "Azadirachta indica",
+    "kategori": "Pohon/Perdu",
+    "gambar": "/images/Mimba.jpeg",
+    "galeri": [
+      "/images/Mimba.jpeg"
+    ],
+    "klasifikasi": {
+      "kingdom": "Plantae",
+      "divisi": "Magnoliophyta",
+      "kelas": "Magnoliopsida",
+      "ordo": "Sapindales",
+      "famili": "Meliaceae"
+    },
+    "ciri_ciri": [
+      "Daun majemuk menyirip banyak dengan anak daun berbentuk lanset dan tepi bergerigi tajam.",
+      "Batang berkayu, tegak kokoh dengan kulit batang cokelat beralur.",
+      "Bunga kecil putih harum, buah drupa lonjong menguning saat masak berbiji satu."
+    ],
+    "habitat": "Daerah tropis kering, lahan terbuka lereng Bukit Kehi, tepi jalan setapak.",
+    "deskripsi_singkat": "Tumbuh kokoh di tanah lereng yang kering dan tahan terhadap cuaca panas terik.",
+    "manfaat": "Pestisida nabati alami, antiseptik kuat, antimalaria, dan penurun kadar gula darah.",
+    "lokasi": "Kawasan ekosistem Bukit Kehi, Pamekasan",
+    "tanggal_dokumentasi": "19/09/2026",
+    "sumber_web": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1213180-2/general-information"
+  },
+  {
+    "id": 4,
+    "nama_lokal": "Rumput Mutiara",
+    "nama_ilmiah": "Oldenlandia corymbosa L.",
+    "kategori": "Tanaman Obat",
+    "gambar": "/images/Rumput_mutiara.jpeg",
+    "galeri": [
+      "/images/Rumput_mutiara.jpeg"
+    ],
+    "klasifikasi": {
+      "kingdom": "Plantae",
+      "divisi": "Magnoliophyta",
+      "kelas": "Magnoliopsida",
+      "ordo": "Gentianales",
+      "famili": "Rubiaceae"
+    },
+    "ciri_ciri": [
+      "Daun tunggal berhadapan-bersilang, sempit memanjang (lanset), ujung dan pangkal runcing.",
+      "Batang herba bercabang banyak dan bersegi empat ramping.",
+      "Bunga sangat kecil putih hingga ungu pucat muncul di ketiak daun.",
+      "Buah berupa kapsul kecil yang dapat memecah saat matang."
+    ],
+    "habitat": "Tanah terbuka atau agak lembap, celah bebatuan, tepi jalan dan lahan berumput.",
+    "deskripsi_singkat": "Herba kecil yang banyak tumbuh di sela batu dan tanah berkerikil di lereng Bukit Kehi.",
+    "manfaat": "Obat herbal radang tenggorokan, infeksi saluran kemih, pereda demam, dan antiradang.",
+    "lokasi": "Kawasan ekosistem Bukit Kehi, Pamekasan",
+    "tanggal_dokumentasi": "19/09/2026",
+    "sumber_web": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1213180-2/general-information"
+  },
+  {
+    "id": 5,
+    "nama_lokal": "Platikan / Mrican",
+    "nama_ilmiah": "Spigelia anthelmia",
+    "kategori": "Herba",
+    "gambar": "/images/Platikan.jpeg",
+    "galeri": [
+      "/images/Platikan.jpeg"
+    ],
+    "klasifikasi": {
+      "kingdom": "Plantae",
+      "divisi": "Magnoliophyta",
+      "kelas": "Magnoliopsida",
+      "ordo": "Gentianales",
+      "famili": "Loganiaceae"
+    },
+    "ciri_ciri": [
+      "Tumbuhan herba semusim dengan batang tegak setinggi 30–50 cm.",
+      "Daun berbentuk bulat telur hingga lanset dengan tangkai pendek.",
+      "Bunga berbentuk corong kecil pada pucuk tangkai tanaman."
+    ],
+    "habitat": "Tanah terbuka dengan serasah kering dekat permukaan tanah lereng bukit.",
+    "deskripsi_singkat": "Ditemukan tumbuh soliter di antara serasah daun kering lereng Bukit Kehi.",
+    "manfaat": "Secara tradisional dimanfaatkan sebagai obat cacing (antelmintik) herbal.",
+    "lokasi": "Kawasan ekosistem Bukit Kehi, Pamekasan",
+    "tanggal_dokumentasi": "19/09/2026",
+    "sumber_web": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1213180-2/general-information"
+  },
+  {
+    "id": 6,
+    "nama_lokal": "Bandotan / Babadotan",
+    "nama_ilmiah": "Ageratum conyzoides L.",
+    "kategori": "Tanaman Obat",
+    "gambar": "/images/Bandotan.jpeg",
+    "galeri": [
+      "/images/Bandotan.jpeg"
+    ],
+    "klasifikasi": {
+      "kingdom": "Plantae",
+      "divisi": "Magnoliophyta",
+      "kelas": "Magnoliopsida",
+      "ordo": "Asterales",
+      "famili": "Asteraceae"
+    },
+    "ciri_ciri": [
+      "Daun tunggal berhadapan, bulat telur, tepi bergerigi dan permukaan berbulu halus.",
+      "Batang herba tegak bercabang beraroma khas bila diremas.",
+      "Bunga majemuk bongkol kecil berwarna ungu kebiruan atau putih.",
+      "Buah achene kecil berbulu halus yang mudah tersebar oleh tiupan angin."
+    ],
+    "habitat": "Tanah terbuka, lahan berumput, semak lereng bukit dan pinggir jalan setapak.",
+    "deskripsi_singkat": "Tumbuhan semak populer yang sangat mudah dijumpai di kawasan hijau Bukit Kehi.",
+    "manfaat": "Penutup luka dan penghenti pendarahan seketika, obat bisul, dan pereda demam.",
+    "lokasi": "Kawasan ekosistem Bukit Kehi, Pamekasan",
+    "tanggal_dokumentasi": "19/09/2026",
+    "sumber_web": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:7086-2/general-information"
+  },
+  {
+    "id": 7,
+    "nama_lokal": "Sida Jawa / Sidaguri Jawa",
+    "nama_ilmiah": "Sida javensis Cav.",
+    "kategori": "Herba",
+    "gambar": "/images/Sida_Jawa.jpeg",
+    "galeri": [
+      "/images/Sida_Jawa.jpeg"
+    ],
+    "klasifikasi": {
+      "kingdom": "Plantae",
+      "divisi": "Magnoliophyta",
+      "kelas": "Magnoliopsida",
+      "ordo": "Malvales",
+      "famili": "Malvaceae"
+    },
+    "ciri_ciri": [
+      "Daun bulat telur hingga menyerupai bentuk hati, tepi bergerigi berambut halus.",
+      "Batang ramping liat menjalar atau condong ke atas.",
+      "Bunga tunggal mekar kuning cerah di ketiak daun bagian ujung batang."
+    ],
+    "habitat": "Lahan terbuka, padang rumput berlereng, semak dan area terbuka tropis.",
+    "deskripsi_singkat": "Tumbuh menyebar di rumput lereng Bukit Kehi dengan kuntum bunga kuning yang menarik serangga.",
+    "manfaat": "Bahan ramuan tradisional pereda nyeri asam urat, reumatik, dan radang persendian.",
+    "lokasi": "Kawasan ekosistem Bukit Kehi, Pamekasan",
+    "tanggal_dokumentasi": "19/09/2026",
+    "sumber_web": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:564786-1/general-information"
+  },
+  {
+    "id": 8,
+    "nama_lokal": "Desmodium / Daun Tiga",
+    "nama_ilmiah": "Desmodium triflorum (L.) DC.",
+    "kategori": "Penutup Tanah",
+    "gambar": "/images/Desmodium.jpeg",
+    "galeri": [
+      "/images/Desmodium.jpeg"
+    ],
+    "klasifikasi": {
+      "kingdom": "Plantae",
+      "divisi": "Magnoliophyta",
+      "kelas": "Magnoliopsida",
+      "ordo": "Fabales",
+      "famili": "Fabaceae"
+    },
+    "ciri_ciri": [
+      "Daun majemuk beranak tiga (trifoliat) berbentuk bulat telur terbalik membulat.",
+      "Batang herba merayap di tanah berbulu halus.",
+      "Bunga kecil berwarna merah muda keunguan di ketiak daun."
+    ],
+    "habitat": "Tanah terbuka, lahan berumput, pematang dan tepian jalan lereng Bukit Kehi.",
+    "deskripsi_singkat": "Membentuk karpet hijau alami yang melindungi struktur tanah Bukit Kehi.",
+    "manfaat": "Mengobati disentri, luka memar, peluruh air seni, dan penyubur unsur hara tanah.",
+    "lokasi": "Kawasan ekosistem Bukit Kehi, Pamekasan",
+    "tanggal_dokumentasi": "19/09/2026",
+    "sumber_web": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:194900-2"
+  },
+  {
+    "id": 9,
+    "nama_lokal": "Pletekan / Kencana Ungu Liar",
+    "nama_ilmiah": "Ruellia tuberosa L.",
+    "kategori": "Tanaman Obat",
+    "gambar": "/images/Pletekan.jpeg",
+    "galeri": [
+      "/images/Pletekan.jpeg"
+    ],
+    "klasifikasi": {
+      "kingdom": "Plantae",
+      "divisi": "Magnoliophyta",
+      "kelas": "Magnoliopsida",
+      "ordo": "Lamiales",
+      "famili": "Acanthaceae"
+    },
+    "ciri_ciri": [
+      "Daun tunggal berbentuk bulat telur hingga elips lonjong berwarna hijau tua segar.",
+      "Batang herba tegak bersegi empat.",
+      "Bunga berbentuk terompet cantik berwarna ungu kebiruan cerah.",
+      "Buah polong memanjang yang meledak saat terkena tetesan air."
+    ],
+    "habitat": "Padang rumput, tepi jalan lereng bukit, lahan terbuka dengan kelembapan cukup.",
+    "deskripsi_singkat": "Memiliki bunga ungu mencolok dan polong biji unik yang meletup saat dibasahi air.",
+    "manfaat": "Herbal antidiabetes penurun gula darah, penghancur batu saluran kemih, dan antiinflamasi.",
+    "lokasi": "Kawasan ekosistem Bukit Kehi, Pamekasan",
+    "tanggal_dokumentasi": "19/09/2026",
+    "sumber_web": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:321285-2/general-information"
+  },
+  {
+    "id": 10,
+    "nama_lokal": "Mindi",
+    "nama_ilmiah": "Melia azedarach L.",
+    "kategori": "Pohon/Perdu",
+    "gambar": "/images/Mindi.jpeg",
+    "galeri": [
+      "/images/Mindi.jpeg"
+    ],
+    "klasifikasi": {
+      "kingdom": "Plantae",
+      "divisi": "Magnoliophyta",
+      "kelas": "Magnoliopsida",
+      "ordo": "Sapindales",
+      "famili": "Meliaceae"
+    },
+    "ciri_ciri": [
+      "Daun majemuk menyirip ganda berselang-seling dengan anak daun lanset bergerigi.",
+      "Batang berkayu dengan percabangan rindang.",
+      "Bunga kecil putih-ungu muda tersusun dalam malai harum di ketiak daun."
+    ],
+    "habitat": "Kawasan tropis, lahan terbuka berbatu dan lereng perbukitan kering.",
+    "deskripsi_singkat": "Pohon peneduh alami yang tumbuh kokoh di kawasan perbukitan Bukit Kehi.",
+    "manfaat": "Pengobatan penyakit kulit tradisional, insektisida nabati, dan pengusir hama.",
+    "lokasi": "Kawasan ekosistem Bukit Kehi, Pamekasan",
+    "tanggal_dokumentasi": "19/09/2026",
+    "sumber_web": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1213180-2/general-information"
+  },
+  {
+    "id": 11,
+    "nama_lokal": "Richardia / Herba Liar",
+    "nama_ilmiah": "Richardia brasiliensis",
+    "kategori": "Herba",
+    "gambar": "/images/Richardia.jpeg",
+    "galeri": [
+      "/images/Richardia.jpeg"
+    ],
+    "klasifikasi": {
+      "kingdom": "Plantae",
+      "divisi": "Magnoliophyta",
+      "kelas": "Magnoliopsida",
+      "ordo": "Gentianales",
+      "famili": "Rubiaceae"
+    },
+    "ciri_ciri": [
+      "Daun tunggal elips hingga lonjong, ujung runcing dengan tepi dan permukaan berbulu.",
+      "Bunga kecil berwarna putih atau merah muda pucat tersusun membulat di pucuk cabang.",
+      "Batang merayap di atas tanah dan bercabang lebat."
+    ],
+    "habitat": "Tanah terbuka lereng bukit, lahan terganggu, tepi jalan kering hingga agak lembap.",
+    "deskripsi_singkat": "Ditemukan di lereng Bukit Kehi sebagai vegetasi perintis penjaga kelembapan tanah.",
+    "manfaat": "Penahan erosi tanah bukit dan dimanfaatkan sebagai pereda gangguan pernapasan.",
+    "lokasi": "Kawasan ekosistem Bukit Kehi, Pamekasan",
+    "tanggal_dokumentasi": "19/09/2026",
+    "sumber_web": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:101651-2/general-information"
+  },
+  {
+    "id": 12,
+    "nama_lokal": "Kirinyuh",
+    "nama_ilmiah": "Chromolaena odorata (L.)",
+    "kategori": "Herba",
+    "gambar": "/images/Kirinyuh.jpeg",
+    "galeri": [
+      "/images/Kirinyuh.jpeg"
+    ],
+    "klasifikasi": {
+      "kingdom": "Plantae",
+      "divisi": "Magnoliophyta",
+      "kelas": "Magnoliopsida",
+      "ordo": "Asterales",
+      "famili": "Asteraceae"
+    },
+    "ciri_ciri": [
+      "Daun tunggal berhadapan, segitiga atau bulat telur menyempit dengan tepi bergerigi.",
+      "Aroma dedaunan sangat khas saat diremas.",
+      "Bunga kecil putih keunguan tersusun dalam kelompok malai pada ujung batang."
+    ],
+    "habitat": "Semak lereng terbuka, tepi tebing bukit, dan area yang mendapat sinar matahari penuh.",
+    "deskripsi_singkat": "Semak liar yang tumbuh subur dan menjadi obat pertolongan pertama warga sekitar.",
+    "manfaat": "Obat penutup luka sayat yang sangat cepat, antibakteri alami, dan pestisida botani.",
+    "lokasi": "Kawasan ekosistem Bukit Kehi, Pamekasan",
+    "tanggal_dokumentasi": "19/09/2026",
+    "sumber_web": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:337497-1/general-information"
+  },
+  {
+    "id": 13,
+    "nama_lokal": "Dewberry / Beri Liar",
+    "nama_ilmiah": "Rubus trivialis Michx.",
+    "kategori": "Pohon/Perdu",
+    "gambar": "/images/Dewberry.jpeg",
+    "galeri": [
+      "/images/Dewberry.jpeg"
+    ],
+    "klasifikasi": {
+      "kingdom": "Plantae",
+      "divisi": "Magnoliophyta",
+      "kelas": "Magnoliopsida",
+      "ordo": "Rosales",
+      "famili": "Rosaceae"
+    },
+    "ciri_ciri": [
+      "Batang memanjang merambat berduri tajam dan rambut kaku kemerahan.",
+      "Daun berselang-seling trifoliat dengan tepi bergerigi halus.",
+      "Bunga mekar putih hingga merah muda, menghasilkan buah beri majemuk kecil yang manis keasaman."
+    ],
+    "habitat": "Semak lereng terjal, padang rumput dan tebing berbatu Bukit Kehi.",
+    "deskripsi_singkat": "Tumbuhan semak berduri dengan buah beri liar yang diminati satwa burung setempat.",
+    "manfaat": "Buah kaya vitamin C dan antioksidan, pucuk daun diseduh untuk pereda gangguan perut.",
+    "lokasi": "Kawasan ekosistem Bukit Kehi, Pamekasan",
+    "tanggal_dokumentasi": "19/09/2026",
+    "sumber_web": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:323930-2/general-information"
+  },
+  {
+    "id": 14,
+    "nama_lokal": "Ileng-ileng / Meniran",
+    "nama_ilmiah": "Phyllanthus niruri L.",
+    "kategori": "Tanaman Obat",
+    "gambar": "/images/Ileng-ileng.jpeg",
+    "galeri": [
+      "/images/Ileng-ileng.jpeg"
+    ],
+    "klasifikasi": {
+      "kingdom": "Plantae",
+      "divisi": "Magnoliophyta",
+      "kelas": "Magnoliopsida",
+      "ordo": "Malpighiales",
+      "famili": "Phyllanthaceae"
+    },
+    "ciri_ciri": [
+      "Daun kecil lonjong tersusun rapat berseling di sepanjang ranting menyerupai daun majemuk.",
+      "Bunga sangat kecil hijau kekuningan muncul di bagian ketiak daun.",
+      "Buah bulat kecil menggantung berderet rapi di bawah ranting daun."
+    ],
+    "habitat": "Semak, tepi jalan setapak berbatu, lereng bukit terbuka yang relatif kering.",
+    "deskripsi_singkat": "Tumbuhan herba liar yang terkenal luas di Madura karena khasiat pengobatan herbalnya.",
+    "manfaat": "Pelindung organ hati (hepatoprotektor), peningkat imunitas tubuh, dan pemecah batu ginjal.",
+    "lokasi": "Kawasan ekosistem Bukit Kehi, Pamekasan",
+    "tanggal_dokumentasi": "19/09/2026",
+    "sumber_web": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:52320-3"
+  },
+  {
+    "id": 15,
+    "nama_lokal": "Ketumbit / Leucas",
+    "nama_ilmiah": "Leucas decemdentata",
+    "kategori": "Herba",
+    "gambar": "/images/Ketumbit.jpeg",
+    "galeri": [
+      "/images/Ketumbit.jpeg"
+    ],
+    "klasifikasi": {
+      "kingdom": "Plantae",
+      "divisi": "Magnoliophyta",
+      "kelas": "Magnoliopsida",
+      "ordo": "Lamiales",
+      "famili": "Lamiaceae"
+    },
+    "ciri_ciri": [
+      "Daun tunggal berhadapan, lonjong lanset dengan tepi bergerigi berambut lembut.",
+      "Bunga kecil putih bersih tersusun rapat membentuk cincin karangan melingkar di ketiak daun.",
+      "Batang bersegi empat tegak beraroma herba."
+    ],
+    "habitat": "Padang rumput terbuka, lereng berpasir kering dan tepian jalan setapak Bukit Kehi.",
+    "deskripsi_singkat": "Herba berkarangan bunga unik melingkar seperti mahkota cincin di buku-buku batangnya.",
+    "manfaat": "Pereda batuk berdahak, obat sakit kepala tradisional, dan penawar racun sengatan serangga.",
+    "lokasi": "Kawasan ekosistem Bukit Kehi, Pamekasan",
+    "tanggal_dokumentasi": "19/09/2026",
+    "sumber_web": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:449314-1"
+  }
+]
