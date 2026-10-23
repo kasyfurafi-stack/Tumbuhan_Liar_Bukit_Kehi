@@ -95,9 +95,12 @@ export default function PlantDetail({ plant, onBack }) {
                 <path d="M4 20c2-5 6-9 11-11" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" fill="none" />
               </svg>
             </div>
-            <p className="text-xs sm:text-sm text-emerald-900 leading-relaxed font-medium">
-              {plant.deskripsi_singkat || plant.habitat || "Tumbuhan ini banyak ditemukan di area terbuka dan lereng Bukit Kehi. Mampu beradaptasi baik di tanah kering hingga agak lembap."}
-            </p>
+            <div>
+              <p className="text-[11px] font-bold uppercase tracking-wider text-emerald-800 mb-0.5">Ringkasan Spesies</p>
+              <p className="text-xs sm:text-sm text-emerald-950 leading-relaxed font-medium">
+                {plant.deskripsi_singkat || plant.habitat || "Tumbuhan ini banyak ditemukan di area terbuka dan lereng Bukit Kehi. Mampu beradaptasi baik di tanah kering hingga agak lembap."}
+              </p>
+            </div>
           </div>
         </div>
 
@@ -106,6 +109,11 @@ export default function PlantDetail({ plant, onBack }) {
           
           {/* Header Nama Tumbuhan */}
           <div>
+            {plant.kategori && (
+              <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 border border-emerald-200 mb-2">
+                {plant.kategori}
+              </span>
+            )}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
               {plant.nama_lokal}
             </h1>
@@ -135,7 +143,7 @@ export default function PlantDetail({ plant, onBack }) {
             </div>
           )}
 
-          {/* Bagian 2: Ciri-ciri Morfologi */}
+          {/* Bagian 2: Ciri Morfologi (Daun, Batang, Bunga/Buah) */}
           <div className="space-y-3 pt-2 border-t border-gray-100">
             <div className="flex items-center space-x-2 text-emerald-800 font-bold text-base">
               <span className="p-1 rounded-md bg-emerald-50 text-emerald-700">
@@ -143,7 +151,7 @@ export default function PlantDetail({ plant, onBack }) {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </span>
-              <span>Ciri-ciri</span>
+              <span>Ciri Morfologi (Daun, Batang, Bunga/Buah)</span>
             </div>
             {Array.isArray(plant.ciri_ciri) && plant.ciri_ciri.length > 0 ? (
               <ul className="space-y-2 text-sm text-gray-700 leading-relaxed pl-1">
@@ -156,7 +164,7 @@ export default function PlantDetail({ plant, onBack }) {
               </ul>
             ) : (
               <p className="text-sm text-gray-700 leading-relaxed pl-1">
-                {plant.morfologi}
+                {plant.ciri_morfologi || plant.morfologi}
               </p>
             )}
           </div>
@@ -176,7 +184,45 @@ export default function PlantDetail({ plant, onBack }) {
             </p>
           </div>
 
-          {/* Bagian 4: Manfaat */}
+          {/* Bagian 4: Peran Ekologis */}
+          {plant.peran_ekologis && (
+            <div className="space-y-2.5 pt-2 border-t border-gray-100">
+              <div className="flex items-center space-x-2 text-emerald-900 font-bold text-base">
+                <span className="p-1 rounded-md bg-emerald-100 text-emerald-800">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                  </svg>
+                </span>
+                <span>Peran Ekologis</span>
+              </div>
+              <div className="bg-emerald-50/80 border border-emerald-200/80 rounded-2xl p-4 shadow-sm">
+                <p className="text-sm text-emerald-950 leading-relaxed font-medium">
+                  {plant.peran_ekologis}
+                </p>
+              </div>
+            </div>
+          )}
+
+          {/* Bagian 5: Konsep Keanekaragaman Hayati */}
+          {plant.konsep_keanekaragaman_hayati && (
+            <div className="space-y-2.5 pt-2 border-t border-gray-100">
+              <div className="flex items-center space-x-2 text-amber-900 font-bold text-base">
+                <span className="p-1 rounded-md bg-amber-100 text-amber-800">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.516 0c.85.493 1.508 1.333 1.508 2.316V18" />
+                  </svg>
+                </span>
+                <span>Konsep Keanekaragaman Hayati</span>
+              </div>
+              <div className="bg-amber-50/80 border border-amber-200/80 rounded-2xl p-4 shadow-sm">
+                <p className="text-sm text-amber-950 leading-relaxed font-medium">
+                  {plant.konsep_keanekaragaman_hayati}
+                </p>
+              </div>
+            </div>
+          )}
+
+          {/* Bagian 6: Manfaat */}
           {plant.manfaat && (
             <div className="space-y-2 pt-2 border-t border-gray-100">
               <div className="flex items-center space-x-2 text-emerald-800 font-bold text-base">

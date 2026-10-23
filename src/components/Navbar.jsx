@@ -61,6 +61,21 @@ export default function Navbar({ activePage = 'home', onNavigate }) {
             >
               Jelajah Tumbuhan
             </button>
+            <button
+              onClick={() => handleNav('game')}
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition shadow-sm ${
+                activePage === 'game'
+                  ? 'bg-emerald-600 text-white ring-2 ring-emerald-400'
+                  : 'bg-emerald-50 text-emerald-800 hover:bg-emerald-100 border border-emerald-200'
+              }`}
+            >
+              <span>🎮</span>
+              <span>Game 3D</span>
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+            </button>
           </div>
 
           {/* Mobile Hamburger Button */}
@@ -118,6 +133,19 @@ export default function Navbar({ activePage = 'home', onNavigate }) {
             }`}
           >
             Jelajah Tumbuhan
+          </button>
+          <button
+            onClick={() => handleNav('game')}
+            className={`w-full text-left px-3 py-2 rounded-md font-medium text-sm transition flex items-center justify-between ${
+              activePage === 'game'
+                ? 'bg-emerald-100 text-emerald-900 font-semibold'
+                : 'text-emerald-700 hover:bg-emerald-50 font-medium'
+            }`}
+          >
+            <span className="flex items-center gap-2">
+              <span>🎮</span> Game Petualangan 3D
+            </span>
+            <span className="text-[10px] bg-emerald-600 text-white px-2 py-0.5 rounded-full font-bold">Baru</span>
           </button>
         </div>
       )}

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "nama_lokal": "Sage liar / salvia liar",
+    "nama_ilmiah": "Salvia misella",
+    "soal": "Salvia misella memiliki ciri daun berhadapan (opposite) dan bunga berwarna biru-ungu. Mengapa tumbuhan ini dikelompokkan ke dalam famili yang sama (Lamiaceae) dengan Leucas decemdentata?",
+    "opsi": {
+      "A": "Karena keduanya sama-sama pohon berkayu tinggi",
+      "B": "Karena memiliki kesamaan pada tata letak daun dan struktur bunganya",
+      "C": "Karena keduanya hidup menempel di pohon besar",
+      "D": "Karena buahnya berbentuk bulat besar"
+    },
+    "kunci": "B",
+    "pembahasan": "Keanekaragaman hayati tingkat spesies mengelompokkan Salvia misella dan Leucas decemdentata ke dalam famili Lamiaceae karena adanya kemiripan struktur morfologi seperti daun berhadapan."
+  }
+]

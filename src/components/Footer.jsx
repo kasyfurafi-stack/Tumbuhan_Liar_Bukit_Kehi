@@ -26,6 +26,13 @@ export default function Footer({ onNavigate }) {
             >
               Jelajah Tumbuhan
             </button>
+            <span className="text-gray-300">•</span>
+            <button
+              onClick={() => onNavigate('game')}
+              className="text-emerald-700 font-semibold hover:text-emerald-900 transition flex items-center gap-1"
+            >
+              <span>🎮</span> Game 3D
+            </button>
           </div>
         )}
 

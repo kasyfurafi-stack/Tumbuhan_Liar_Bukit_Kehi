@@ -5,6 +5,7 @@ import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Explore from './pages/Explore.jsx';
 import PlantDetail from './pages/PlantDetail.jsx';
+import Game from './pages/Game.jsx';
 import plantData from './data/daun.json';
 
 export default function App() {
@@ -39,11 +40,12 @@ export default function App() {
       />
 
       {/* Main Content Area */}
-      <main className="flex-grow pt-16">
+      <main className={`flex-grow pt-16 ${currentPage === 'game' ? 'overflow-hidden' : ''}`}>
         {currentPage === 'home' && (
           <Home
             onExplore={() => handleNavigate('jelajah')}
             onAbout={() => handleNavigate('tentang')}
+            onPlayGame={() => handleNavigate('game')}
           />
         )}
 
@@ -64,10 +66,17 @@ export default function App() {
             onBack={handleBackToExplore}
           />
         )}
+
+        {currentPage === 'game' && (
+          <Game
+            onNavigate={handleNavigate}
+            onSelectPlant={handleSelectPlant}
+          />
+        )}
       </main>
 
-      {/* Footer Global */}
-      <Footer onNavigate={handleNavigate} />
+      {/* Footer Global (disembunyikan saat dalam game untuk pengalaman immersive) */}
+      {currentPage !== 'game' && <Footer onNavigate={handleNavigate} />}
     </div>
   );
 }

@@ -5,7 +5,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 3000,
-    open: true
+    allowedHosts: ['https://pappose-unprim-jaden.ngrok-free.dev'],
+    host: true, // Wajib agar bisa diakses dari luar network
+    port: 3001, // Pastikan port ini sesuai
+    open: false // Biasanya auto-open dinonaktifkan untuk ngrok
   }
 });

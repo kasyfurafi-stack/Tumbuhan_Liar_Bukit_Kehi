@@ -20,12 +20,22 @@ export default function Explore({ plants = [], onSelectPlant }) {
   const filteredPlants = useMemo(() => {
     return plants.filter((plant) => {
       const q = searchQuery.toLowerCase().trim();
+      const ciriText = Array.isArray(plant.ciri_ciri)
+        ? plant.ciri_ciri.join(' ')
+        : (plant.ciri_ciri || plant.morfologi || '');
+
       const matchSearch =
         !q ||
         plant.nama_lokal?.toLowerCase().includes(q) ||
         plant.nama_ilmiah?.toLowerCase().includes(q) ||
-        plant.morfologi?.toLowerCase().includes(q) ||
-        plant.habitat?.toLowerCase().includes(q);
+        plant.kategori?.toLowerCase().includes(q) ||
+        plant.habitat?.toLowerCase().includes(q) ||
+        plant.deskripsi_singkat?.toLowerCase().includes(q) ||
+        plant.peran_ekologis?.toLowerCase().includes(q) ||
+        plant.konsep_keanekaragaman_hayati?.toLowerCase().includes(q) ||
+        plant.manfaat?.toLowerCase().includes(q) ||
+        plant.klasifikasi?.famili?.toLowerCase().includes(q) ||
+        ciriText.toLowerCase().includes(q);
 
       const matchCategory =
         selectedCategory === 'Semua' || plant.kategori === selectedCategory;
