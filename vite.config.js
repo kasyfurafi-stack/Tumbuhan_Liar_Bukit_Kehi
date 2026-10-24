@@ -13,8 +13,8 @@ function serveGameDist() {
   return {
     name: 'serve-game-dist',
     configureServer(server) {
-      server.middlewares.use('/game', (req, res, next) => {
-        // Strip prefix /game dari URL
+      server.middlewares.use('/game/dist', (req, res, next) => {
+        // Strip prefix /game/dist dari URL → cari di game/dist/
         const filePath = path.join(gameDistPath, req.url === '/' ? 'index.html' : req.url);
 
         if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
