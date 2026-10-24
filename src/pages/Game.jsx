@@ -63,7 +63,7 @@ export default function Game({ onNavigate, onSelectPlant }) {
           
           <div className="hidden sm:flex items-center gap-2 text-emerald-400 font-semibold">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span>Petualang Cilik 3D: Eksplorasi Bukit Kehi</span>
+            <span>Petualangan Keanekaragaman Hayati Bukit Kehi 3D</span>
           </div>
         </div>
 
@@ -73,15 +73,15 @@ export default function Game({ onNavigate, onSelectPlant }) {
             <span className="font-mono bg-slate-700 text-slate-200 px-1.5 py-0.5 rounded">W A S D</span>
             <span>Jalan</span>
             <span className="text-slate-600">|</span>
-            <span className="font-mono bg-slate-700 text-slate-200 px-1.5 py-0.5 rounded">Spasi</span>
-            <span>Lompat</span>
+            <span className="font-mono bg-emerald-800 text-emerald-200 font-bold px-1.5 py-0.5 rounded">Spasi / 🦘</span>
+            <span className="text-emerald-300 font-semibold">Lompat</span>
             <span className="text-slate-600">|</span>
-            <span>Putar Kamera (Klik Kanan/Drag)</span>
+            <span>Putar Kamera (Seret Mouse/Layar)</span>
           </div>
 
           <button
             onClick={toggleFullscreen}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white transition font-medium text-xs shadow-md shadow-emerald-950/40"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white transition font-medium text-xs shadow-md shadow-emerald-950/40 cursor-pointer"
             title="Mode Layar Penuh"
           >
             {isFullscreen ? (
@@ -102,7 +102,7 @@ export default function Game({ onNavigate, onSelectPlant }) {
           </button>
 
           <a
-            href="/game.html"
+            href="/game/dist/index.html"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition text-xs border border-slate-700/60"
@@ -111,6 +111,7 @@ export default function Game({ onNavigate, onSelectPlant }) {
             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
+            <span>Tab Baru</span>
           </a>
         </div>
       </div>
@@ -128,8 +129,8 @@ export default function Game({ onNavigate, onSelectPlant }) {
         )}
         <iframe
           ref={iframeRef}
-          src="/game.html"
-          title="Petualang Cilik 3D - Eksplorasi Flora Bukit Kehi"
+          src="/game/dist/index.html"
+          title="Petualangan Keanekaragaman Hayati Bukit Kehi 3D"
           className="w-full h-full border-0 block"
           allow="autoplay; fullscreen; accelerometer; gyroscope"
           onLoad={() => setLoading(false)}

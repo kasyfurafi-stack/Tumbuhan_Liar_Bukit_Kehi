@@ -1,0 +1,6 @@
+{
+  "name": "Petualangan Keanekaragaman Hayati di Bukit Kehi",
+  "description": "Game edukasi interaktif 3D virtual menjelajahi 15 flora dan keanekaragaman hayati Bukit Kehi untuk siswa SMP/SMA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
