@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import plantData from '../data/daun.json';
+import { getAssetUrl } from '../utils/asset.js';
 
 export default function Game({ onNavigate, onSelectPlant }) {
   const iframeRef = useRef(null);
@@ -102,7 +103,7 @@ export default function Game({ onNavigate, onSelectPlant }) {
           </button>
 
           <a
-            href="/game/dist/index.html"
+            href={getAssetUrl('game/index.html')}
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition text-xs border border-slate-700/60"
@@ -129,7 +130,7 @@ export default function Game({ onNavigate, onSelectPlant }) {
         )}
         <iframe
           ref={iframeRef}
-          src="/game/dist/index.html"
+          src={getAssetUrl('game/index.html')}
           title="Petualangan Keanekaragaman Hayati Bukit Kehi 3D"
           className="w-full h-full border-0 block"
           allow="autoplay; fullscreen; accelerometer; gyroscope"

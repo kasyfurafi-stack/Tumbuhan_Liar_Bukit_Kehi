@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && npm run build:game",
+    "build": "npm run build:game && vite build",
     "preview": "vite preview",
     "install:game": "npm install --prefix game --legacy-peer-deps",
     "build:game": "cd game && npm run build",
-    "setup": "npm install && npm run install:game && npm run build:game"
+    "setup": "npm install && npm run install:game && npm run build"
   },
   "dependencies": {
     "react": "^18.3.1",

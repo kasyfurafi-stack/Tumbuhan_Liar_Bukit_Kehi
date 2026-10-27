@@ -1,4 +1,5 @@
 import React from 'react';
+import { getAssetUrl } from '../utils/asset.js';
 
 export default function PlantCard({ plant, onSelect }) {
   return (
@@ -9,7 +10,7 @@ export default function PlantCard({ plant, onSelect }) {
       {/* Gambar Tumbuhan */}
       <div className="relative aspect-[4/3] bg-emerald-50/50 overflow-hidden">
         <img
-          src={plant.gambar}
+          src={getAssetUrl(plant.gambar)}
           alt={plant.nama_lokal}
           loading="lazy"
           className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"

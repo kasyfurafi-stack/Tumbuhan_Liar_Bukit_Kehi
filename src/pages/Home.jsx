@@ -1,4 +1,5 @@
 import React from 'react';
+import { getAssetUrl } from '../utils/asset.js';
 
 export default function Home({ onExplore, onAbout, onPlayGame }) {
   return (
@@ -15,7 +16,7 @@ export default function Home({ onExplore, onAbout, onPlayGame }) {
             className="w-full h-full object-cover object-center"
             poster="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=2000&auto=format&fit=crop"
           >
-            <source src="/video.mp4" type="video/mp4" />
+            <source src={getAssetUrl('video.mp4')} type="video/mp4" />
             <img
               src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=2000&auto=format&fit=crop"
               alt="Pemandangan Bukit Kehi"
@@ -255,7 +256,7 @@ export default function Home({ onExplore, onAbout, onPlayGame }) {
                   </button>
 
                   <a
-                    href="/game.html"
+                    href={getAssetUrl('game.html')}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center space-x-2 text-xs sm:text-sm text-slate-300 hover:text-white underline underline-offset-4"

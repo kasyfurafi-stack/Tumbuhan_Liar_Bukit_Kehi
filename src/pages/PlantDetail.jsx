@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { getAssetUrl } from '../utils/asset.js';
 
 export default function PlantDetail({ plant, onBack }) {
   const [activeImage, setActiveImage] = useState(plant?.gambar || '');
@@ -47,7 +48,7 @@ export default function PlantDetail({ plant, onBack }) {
           {/* Gambar Utama dengan Tombol Zoom */}
           <div className="relative aspect-square rounded-3xl overflow-hidden bg-white border border-gray-100 shadow-md group">
             <img
-              src={activeImage || plant.gambar}
+              src={getAssetUrl(activeImage || plant.gambar)}
               alt={plant.nama_lokal}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
               onClick={() => setIsZoomOpen(true)}
@@ -81,7 +82,7 @@ export default function PlantDetail({ plant, onBack }) {
                     activeImage === imgUrl ? 'border-emerald-600 ring-2 ring-emerald-200' : 'border-transparent opacity-70 hover:opacity-100'
                   }`}
                 >
-                  <img src={imgUrl} alt={`Thumbnail ${idx + 1}`} className="w-full h-full object-cover" />
+                  <img src={getAssetUrl(imgUrl)} alt={`Thumbnail ${idx + 1}`} className="w-full h-full object-cover" />
                 </button>
               ))}
             </div>
@@ -275,7 +276,7 @@ export default function PlantDetail({ plant, onBack }) {
         >
           <div className="relative max-w-4xl max-h-[90vh]">
             <img
-              src={activeImage || plant.gambar}
+              src={getAssetUrl(activeImage || plant.gambar)}
               alt={plant.nama_lokal}
               className="max-w-full max-h-[85vh] rounded-2xl object-contain shadow-2xl"
             />
