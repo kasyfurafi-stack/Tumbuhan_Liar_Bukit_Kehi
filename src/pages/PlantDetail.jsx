@@ -1,6 +1,89 @@
 import React, { useState } from 'react';
 import { getAssetUrl } from '../utils/asset.js';
 
+// Daftar nama taksonomi, ordo, famili, genus, dan nama ilmiah tumbuhan
+const SCIENTIFIC_TERMS = [
+  // Tingkat Takson (Kingdom, Divisi, Kelas, Ordo, Famili)
+  'Plantae',
+  'Magnoliophyta',
+  'Magnoliopsida',
+  'Lamiales',
+  'Fabales',
+  'Sapindales',
+  'Gentianales',
+  'Asterales',
+  'Malvales',
+  'Rosales',
+  'Malpighiales',
+  'Lamiaceae',
+  'Fabaceae',
+  'Meliaceae',
+  'Rubiaceae',
+  'Loganiaceae',
+  'Asteraceae',
+  'Malvaceae',
+  'Acanthaceae',
+  'Rosaceae',
+  'Phyllanthaceae',
+  // Spesies & Genus
+  'Salvia misella',
+  'Leucas decemdentata',
+  'Desmodium adscendens',
+  'Desmodium triflorum',
+  'Azadirachta indica',
+  'Melia azedarach',
+  'Oldenlandia corymbosa',
+  'Richardia brasiliensis',
+  'Spigelia anthelmia',
+  'Ageratum conyzoides',
+  'Sida javensis',
+  'Ruellia tuberosa',
+  'Chromolaena odorata',
+  'Rubus trivialis',
+  'Phyllanthus niruri',
+  'Desmodium',
+  'Salvia',
+  'Leucas',
+  'Ruellia',
+  'Oldenlandia',
+  'Spigelia',
+  'Ageratum',
+  'Sida',
+  'Melia',
+  'Richardia',
+  'Chromolaena',
+  'Rubus',
+  'Phyllanthus',
+  'Azadirachta'
+];
+
+function formatScientificText(text) {
+  if (!text || typeof text !== 'string') return text;
+  const sorted = [...SCIENTIFIC_TERMS].sort((a, b) => b.length - a.length);
+  const regex = new RegExp(`\\b(${sorted.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})\\b`, 'g');
+  const elements = [];
+  let lastIndex = 0;
+  let match;
+
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      elements.push(text.slice(lastIndex, match.index));
+    }
+    elements.push(
+      <span key={`${match.index}-${match[0]}`} className="italic">
+        {match[0]}
+      </span>
+    );
+    lastIndex = regex.lastIndex;
+  }
+
+  if (lastIndex < text.length) {
+    elements.push(text.slice(lastIndex));
+  }
+
+  return elements.length > 0 ? elements : text;
+}
+
 export default function PlantDetail({ plant, onBack }) {
   const [activeImage, setActiveImage] = useState(plant?.gambar || '');
   const [isZoomOpen, setIsZoomOpen] = useState(false);
@@ -99,7 +182,7 @@ export default function PlantDetail({ plant, onBack }) {
             <div>
               <p className="text-[11px] font-bold uppercase tracking-wider text-emerald-800 mb-0.5">Ringkasan Spesies</p>
               <p className="text-xs sm:text-sm text-emerald-950 leading-relaxed font-medium">
-                {plant.deskripsi_singkat || plant.habitat || "Tumbuhan ini banyak ditemukan di area terbuka dan lereng Bukit Kehi. Mampu beradaptasi baik di tanah kering hingga agak lembap."}
+                {formatScientificText(plant.deskripsi_singkat || plant.habitat || "Tumbuhan ini banyak ditemukan di area terbuka dan lereng Bukit Kehi. Mampu beradaptasi baik di tanah kering hingga agak lembap.")}
               </p>
             </div>
           </div>
@@ -135,11 +218,11 @@ export default function PlantDetail({ plant, onBack }) {
                 <span>Klasifikasi</span>
               </div>
               <div className="bg-gray-50/70 rounded-2xl p-4 border border-gray-100 grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-6 text-sm">
-                <div className="flex"><span className="w-24 text-gray-500 font-normal">Kingdom</span><span className="text-gray-900 font-medium">: {plant.klasifikasi.kingdom || 'Plantae'}</span></div>
-                <div className="flex"><span className="w-24 text-gray-500 font-normal">Divisi</span><span className="text-gray-900 font-medium">: {plant.klasifikasi.divisi || '-'}</span></div>
-                <div className="flex"><span className="w-24 text-gray-500 font-normal">Kelas</span><span className="text-gray-900 font-medium">: {plant.klasifikasi.kelas || '-'}</span></div>
-                <div className="flex"><span className="w-24 text-gray-500 font-normal">Ordo</span><span className="text-gray-900 font-medium">: {plant.klasifikasi.ordo || '-'}</span></div>
-                <div className="flex"><span className="w-24 text-gray-500 font-normal">Famili</span><span className="text-gray-900 font-medium">: {plant.klasifikasi.famili || '-'}</span></div>
+                <div className="flex"><span className="w-24 text-gray-500 font-normal">Kingdom</span><span className="text-gray-900 font-medium">: <span className="italic">{plant.klasifikasi.kingdom || 'Plantae'}</span></span></div>
+                <div className="flex"><span className="w-24 text-gray-500 font-normal">Divisi</span><span className="text-gray-900 font-medium">: <span className="italic">{plant.klasifikasi.divisi || '-'}</span></span></div>
+                <div className="flex"><span className="w-24 text-gray-500 font-normal">Kelas</span><span className="text-gray-900 font-medium">: <span className="italic">{plant.klasifikasi.kelas || '-'}</span></span></div>
+                <div className="flex"><span className="w-24 text-gray-500 font-normal">Ordo</span><span className="text-gray-900 font-medium">: <span className="italic">{plant.klasifikasi.ordo || '-'}</span></span></div>
+                <div className="flex"><span className="w-24 text-gray-500 font-normal">Famili</span><span className="text-gray-900 font-medium">: <span className="italic">{plant.klasifikasi.famili || '-'}</span></span></div>
               </div>
             </div>
           )}
@@ -159,13 +242,13 @@ export default function PlantDetail({ plant, onBack }) {
                 {plant.ciri_ciri.map((item, idx) => (
                   <li key={idx} className="flex items-start space-x-2.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 mt-2 flex-shrink-0" />
-                    <span>{item}</span>
+                    <span>{formatScientificText(item)}</span>
                   </li>
                 ))}
               </ul>
             ) : (
               <p className="text-sm text-gray-700 leading-relaxed pl-1">
-                {plant.ciri_morfologi || plant.morfologi}
+                {formatScientificText(plant.ciri_morfologi || plant.morfologi)}
               </p>
             )}
           </div>
@@ -181,7 +264,7 @@ export default function PlantDetail({ plant, onBack }) {
               <span>Habitat</span>
             </div>
             <p className="text-sm text-gray-700 leading-relaxed pl-1">
-              • {plant.habitat}
+              • {formatScientificText(plant.habitat)}
             </p>
           </div>
 
@@ -198,7 +281,7 @@ export default function PlantDetail({ plant, onBack }) {
               </div>
               <div className="bg-emerald-50/80 border border-emerald-200/80 rounded-2xl p-4 shadow-sm">
                 <p className="text-sm text-emerald-950 leading-relaxed font-medium">
-                  {plant.peran_ekologis}
+                  {formatScientificText(plant.peran_ekologis)}
                 </p>
               </div>
             </div>
@@ -217,7 +300,7 @@ export default function PlantDetail({ plant, onBack }) {
               </div>
               <div className="bg-amber-50/80 border border-amber-200/80 rounded-2xl p-4 shadow-sm">
                 <p className="text-sm text-amber-950 leading-relaxed font-medium">
-                  {plant.konsep_keanekaragaman_hayati}
+                  {formatScientificText(plant.konsep_keanekaragaman_hayati)}
                 </p>
               </div>
             </div>
@@ -235,7 +318,7 @@ export default function PlantDetail({ plant, onBack }) {
                 <span>Manfaat</span>
               </div>
               <p className="text-sm text-gray-700 leading-relaxed pl-1">
-                • {plant.manfaat}
+                • {formatScientificText(plant.manfaat)}
               </p>
             </div>
           )}
