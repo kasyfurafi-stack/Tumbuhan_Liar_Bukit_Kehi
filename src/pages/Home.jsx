@@ -131,7 +131,7 @@ export default function Home({ onExplore, onAbout, onPlayGame }) {
               01
             </div>
             <h3 className="text-lg font-bold text-emerald-950 mb-2">
-              Asal-usul Nama *Kehi*
+              Asal-usul Nama Kehi
             </h3>
             <p className="text-sm text-gray-600 leading-relaxed">
               Nama <em>Kehi</em> dikenal sebagai istilah untuk lahan kosong atau tak bertuan, yang kini bertransformasi menjadi objek wisata berkat inisiatif pemerintah desa, pemuda Karang Taruna, dan Pokdarwis.
